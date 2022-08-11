@@ -13,7 +13,7 @@
     <h1>Testing</h1>
 
 
-    <button id="Print"> </button>test1 </button>
+    <button id="Print"> test1 </button>
 </body>
 
 
@@ -23,7 +23,7 @@
         // get jwt from localStorage
         var jwt = localStorage.getItem('jwt');
         // send jwt to server
-        confirm.log(jwt)
+        console.log(jwt)
 
         Print.postMessage('jwt es ' + jwt);
     });
