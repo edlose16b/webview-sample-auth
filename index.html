@@ -23,10 +23,15 @@
         // get jwt from localStorage
         var jwt = localStorage.getItem('jwt');
         // send jwt to server
+        confirm.log(jwt)
 
         Print.postMessage('jwt es ' + jwt);
     });
 
+    var holaMundo = (val) => {
+        alert('hola ' + val)
+        localStorage.setItem('jwt', val);
+    }
 
 
 </script>
