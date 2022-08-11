@@ -9,5 +9,16 @@
 <body>
     
     <h1>Testing</h1>
+
+
+    <button id="Print">Print.postMessage('Hello World being called from Javascript code');</button>
 </body>
+
+
+<script>
+    var printBtn = document.getElementById('Print');
+    printBtn.addEventListener('click', function() {
+        Print.postMessage('Hello World being called from Javascript code');
+    });
+</script>
 </html>
