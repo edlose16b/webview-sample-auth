@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Testing 16</h1>
+    <h1>Testing 17</h1>
 
 
     <button id="Print"> Test Button </button>
@@ -19,7 +19,6 @@
 <script>
 
     localStorage.setItem('jwt', 'init');
-
 
     window.sendToFlutter = (message) => {
         Print.postMessage('f1' + typeof flutterChannel);
@@ -30,9 +29,8 @@
             flutterChannel.postMessage(message);
         }
     }
-
 </script>
-<script src="app.js" />
+<script src="app.js"></script>
 
 
 </html>

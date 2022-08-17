@@ -1,7 +1,7 @@
 var jwt1 = localStorage.getItem('jwt');
 
-//flutterChannel.postMessage('message1');
-sendToFlutter('prueba 1');
+flutterChannel.postMessage('message1');
+// sendToFlutter('prueba 1');
 window.sendToFlutter('jwt1 es ' + jwt1);
 
 window.sendToFlutter('prueba 2');
@@ -15,7 +15,7 @@ printBtn.addEventListener('click', function () {
     // send jwt to server
     console.log(jwt)
     flutterChannel.postMessage('message2');
-    sendToFlutter('prueba 3');
+    // sendToFlutter('prueba 3');
     window.sendToFlutter('prueba 4');
     flutterChannel.postMessage('prueba');
 
