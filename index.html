@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Testing 15</h1>
+    <h1>Testing 16</h1>
 
 
     <button id="Print"> Test Button </button>
@@ -18,6 +18,9 @@
 
 
 <script>
+
+    localStorage.setItem('jwt','init');
+
     var jwt1 = localStorage.getItem('jwt');
 
     window.sendToFlutter = (message) => {
