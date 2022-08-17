@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Testing 9</h1>
+    <h1>Testing 10</h1>
 
 
     <button id="Print"> Test Button </button>
@@ -20,12 +20,16 @@
 <script>
 
     function sendToFlutter(message) {
+        console.log('Este es un ejemplo', flutterChannel)
+
         if (flutterChannel) {
+            console.log('Este es un ejemplo', flutterChannel)
+
             flutterChannel.postMessage(message);
         }
     }
 
-    
+    flutterChannel.postMessage('message1');
     sendToFlutter('prueba 1');
     window.sendToFlutter('prueba 2');
 
@@ -37,6 +41,7 @@
         var jwt = localStorage.getItem('jwt');
         // send jwt to server
         console.log(jwt)
+        flutterChannel.postMessage('message2');
         sendToFlutter('prueba 3');
         window.sendToFlutter('prueba 4');
         flutterChannel.postMessage('prueba');
