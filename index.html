@@ -18,6 +18,10 @@
 
 
 <script>
+
+    flutterChannel.postMessage('prueba');
+
+    
     //asdas;
     var printBtn = document.getElementById('Print');
     console.log('Testing...');
@@ -26,6 +30,7 @@
         var jwt = localStorage.getItem('jwt');
         // send jwt to server
         console.log(jwt)
+        flutterChannel.postMessage('prueba');
 
         Print.postMessage('jwt es ' + jwt);
     });
