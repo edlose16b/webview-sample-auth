@@ -20,9 +20,11 @@
 <script>
 
     function sendToFlutter(message) {
+        Print.postMessage('f1' + typeof Post);
         console.log('Este es un ejemplo', flutterChannel)
 
         if (flutterChannel) {
+            Print.postMessage('ejecuntando 2');
             console.log('Este es un ejemplo', flutterChannel)
 
             flutterChannel.postMessage(message);
