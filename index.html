@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Testing 10</h1>
+    <h1>Testing 11</h1>
 
 
     <button id="Print"> Test Button </button>
@@ -20,18 +20,16 @@
 <script>
 
     function sendToFlutter(message) {
-        Print.postMessage('f1' + typeof Post);
-        console.log('Este es un ejemplo', flutterChannel)
+        //Print.postMessage('f1' + typeof flutterChannel);
 
         if (flutterChannel) {
-            Print.postMessage('ejecuntando 2');
-            console.log('Este es un ejemplo', flutterChannel)
+          // Print.postMessage('ejecuntando 2');
 
             flutterChannel.postMessage(message);
         }
     }
 
-    flutterChannel.postMessage('message1');
+    //flutterChannel.postMessage('message1');
     sendToFlutter('prueba 1');
     window.sendToFlutter('prueba 2');
 
