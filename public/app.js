@@ -1,4 +1,5 @@
-var jwt1 = localStorage.getItem('jwt');
+setTimeout(function() {
+    var jwt1 = localStorage.getItem('jwt');
 console.log('prueba');
 flutterChannel.postMessage('message from app.html');
 // sendToFlutter('prueba 1');
@@ -27,3 +28,5 @@ var holaMundo = (val) => {
     localStorage.setItem('jwt', val);
 }
 
+
+} , 5000);
