@@ -19,7 +19,7 @@
 <script>
 
     localStorage.setItem('jwt', 'init');
-
+    flutterChannel.postMessage('message from index.html');
     window.sendToFlutter = (message) => {
         Print.postMessage('f1' + typeof flutterChannel);
 

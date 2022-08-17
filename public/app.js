@@ -1,6 +1,6 @@
 var jwt1 = localStorage.getItem('jwt');
-
-flutterChannel.postMessage('message1');
+console.log('prueba');
+flutterChannel.postMessage('message from app.html');
 // sendToFlutter('prueba 1');
 window.sendToFlutter('jwt1 es ' + jwt1);
 
