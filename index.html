@@ -10,7 +10,7 @@
 
 <body>
 
-    <h1>Testing 8</h1>
+    <h1>Testing 9</h1>
 
 
     <button id="Print"> Test Button </button>
@@ -25,8 +25,9 @@
         }
     }
 
-
-    sendToFlutte('prueba 1');
+    
+    sendToFlutter('prueba 1');
+    window.sendToFlutter('prueba 2');
 
     //asdas;
     var printBtn = document.getElementById('Print');
@@ -36,7 +37,8 @@
         var jwt = localStorage.getItem('jwt');
         // send jwt to server
         console.log(jwt)
-        sendToFlutte('prueba 2');
+        sendToFlutter('prueba 3');
+        window.sendToFlutter('prueba 4');
         flutterChannel.postMessage('prueba');
 
         Print.postMessage('jwt es ' + jwt);
